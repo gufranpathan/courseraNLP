@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\Gufran.Pathan\NewWorkSpace\Stanford NLP\src\nlangp1\hmm.py", line 179, in <module>
+    if __name__ == "__main__": main(sys.argv[1], sys.argv[2], sys.argv[3])
+  File "C:\Users\Gufran.Pathan\NewWorkSpace\Stanford NLP\src\nlangp1\hmm.py", line 171, in main
+    tagging, scores = viterbi(hmm, sentence)
+  File "C:\Users\Gufran.Pathan\NewWorkSpace\Stanford NLP\src\nlangp1\hmm.py", line 114, in viterbi
+    for w in K(k - 2)])
+  File "C:\Users\Gufran.Pathan\NewWorkSpace\Stanford NLP\src\nlangp1\hmm.py", line 99, in q
+    def q(w, u, v): return hmm.trigram_prob((u, v, w))
+  File "C:\Users\Gufran.Pathan\NewWorkSpace\Stanford NLP\src\nlangp1\hmm.py", line 39, in trigram_prob
+    return self.ngrams[3].get(trigram, 0.0) / self.ngrams[2][bigram]
+KeyError: ('*', 'I-GENE')
