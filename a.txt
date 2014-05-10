@@ -1,2 +1,0 @@
-pydev debugger: starting
-(9, 7)
